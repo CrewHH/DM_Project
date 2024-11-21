@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auctechart - App de Subastas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="circular-bg"></div> <!-- Fondo -->
+    
+    <!-- barra nav -->
+    <header class="header-centreado">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://scontent.flim38-1.fna.fbcdn.net/v/t39.30808-6/467548442_3913876555527057_7047467078352348380_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHQZskne2Zw8FdkPsXMyFGd1NH0RspubDrU0fRGym5sOnrGNR_C6ZaMSukrAMVe0GQWLQMjSkJ9C0T_HEUVL9Eg&_nc_ohc=xuMg9pVhI7kQ7kNvgExUICd&_nc_zt=23&_nc_ht=scontent.flim38-1.fna&_nc_gid=AU_V1-0LRaRis1HyElaeEoY&oh=00_AYAbzzZZfCnyeinVQ85XOCCbCsTJ33dp_2M6INAwB9ymeQ&oe=674547FE" alt="Auctechart Logo">
+                Auctechart
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="mostrarSeccion('acerca-de')">Acerca de</a></li>
+                <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- secc contenido-->
+    <section id="inicio" class="section" style="display: block;">
+        <h1>Descarga Auctechart para Android</h1>
+        <p>Descarga nuestra app y accede a productos únicos de arte y tecnología en subastas interactivas. Disfruta de transacciones rápidas y seguras, y obtén lo que deseas al mejor precio.</p>
+        <a href="https://www.mediafire.com/file/8g4n8c7z7f3co52/AuctechArt.apk/file" target="_blank" class="btn">Descargar APK</a>
+    </section>
+
+    <section id="acerca-de" class="section" style="display: none;">
+        <h2>Acerca de Auctechart</h2>
+        <p>
+            Nuestra app ofrece productos exclusivos de arte y tecnología mediante subastas interactivas, garantizando autenticidad, confianza y emoción en cada compra.
+            
+            <strong>¿Por qué elegirnos?</strong><br>
+            - Subastas dinámicas: Consigue productos únicos al mejor precio.<br>
+            - Pagos seguros: Procesos confiables con protección contra fraudes.<br>
+            - Exclusividad garantizada: Productos que no encontrarás en ningún otro lugar.<br>
+            
+            Únete a nuestra comunidad y vive una experiencia de compra inigualable.
+        </p>
+    </section>
+
+    <section id="contacto" class="section" style="display: none;">
+        <h2>Contacto</h2>
+        <p>Para más información sobre Auctechart, contáctanos en <a href="mailto:info@auctechart.com">auctechart@gmail.com</a>.</p>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2024 Auctechart. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Secciones -->
+    <script>
+        function mostrarSeccion(seccionId) {
+            
+            document.getElementById("inicio").style.display = "none";
+            document.getElementById("acerca-de").style.display = "none";
+            document.getElementById("contacto").style.display = "none";
+            
+            
+            document.getElementById(seccionId).style.display = "block";
+        }
+    </script>
+</body>
+</html>
+
